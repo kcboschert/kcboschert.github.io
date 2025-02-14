@@ -1,0 +1,76 @@
+baseURL = 'https://kcboschert.github.io'
+languageCode = 'en-us'
+defaultContentLanguage = "en"
+copyright = "Copyright © 2025 Kevin Boschert"
+title = "Kevin Boschert"
+author = "kcboschert"
+enableEmoji = true
+theme = "github.com/Junyi-99/hugo-theme-anubis2"
+
+[outputs]
+home = ["html", "rss"]
+
+[[menu.main]]
+identifier = "home"
+name = "Home"
+url = "/"
+weight = 1
+
+[[menu.main]]
+identifier = "blog"
+name = "Blog"
+url = "/blog/"
+weight = 10
+
+[[menu.main]]
+identifier = "tags"
+name = "Tags"
+url = "/tags/"
+weight = 20
+
+[[menu.main]]
+identifier = "about"
+name = "About"
+url = "/about/"
+weight = 30
+
+[pagination]
+pagerSize = 5
+
+[taxonomies]
+category = "categories"
+tag = "tags"
+series = "series"
+
+[markup.goldmark.renderer]
+unsafe = true
+
+[markup.highlight]
+style = "catppuccin-mocha"
+tabWidth = 2
+
+[module]
+[[module.imports]]
+path = "github.com/Junyi-99/hugo-theme-anubis2"
+
+[params.author]
+name = "Kevin Boschert"
+
+[params]
+description = "Kevin writes about computers, programming, gamedev, and games."
+dateFormat = "2006-01-02"
+paginationSinglePost = true
+colorTheme = "dark"
+colorThemeSwitcher = true
+
+readMore = false
+readNextPosts = 2
+copyCodeButton = true
+rssAsSocialIcon = true
+locale = "en-us"
+math = false
+
+customCSS = ["css/theme.css"]
+social = [
+	{ id = "github", url = "https://www.github.com/kcboschert" },
+]

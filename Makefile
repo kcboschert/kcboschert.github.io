@@ -1,4 +1,4 @@
-.PHONY: update
+.PHONY: update server post
 
 update:
 	git submodule update --remote

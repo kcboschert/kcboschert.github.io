@@ -1,0 +1,32 @@
+baseURL = "https://kcboschert.github.io/"
+languageCode = 'en-us'
+theme = "poison"
+title = "Kevin Boschert"
+enableEmoji= true
+
+[params]
+	brand = "Kevin Boschert"
+	remote_brand_image = "https://avatars.githubusercontent.com/u/71199"
+	description = "Kevin writes about computers, programming, gamedev, and games."
+	dark_mode = true
+	front_page_content = ["posts"]
+	menu = [
+		{Name = "About", URL = "/about/", HasChildren = false},
+		{Name = "Posts", URL = "/posts/", Pre = "Recent", HasChildren = true, Limit = 3},
+	]
+	github_url = "https://github.com/kcboschert"
+	linkedin_url = "https://linkedin.com/in/kcboschert"
+
+	rss_icon = true
+	rss_section = "posts"
+
+[pagination]
+	pager_size = 5
+
+[markup.goldmark.renderer]
+    unsafe = true
+
+[taxonomies]
+	categories = "categories"
+	tags = "tags"
+	series = "series"
